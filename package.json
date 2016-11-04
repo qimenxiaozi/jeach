@@ -1,14 +1,14 @@
 {
-  "name": "generator-foreach",
+  "name": "jeach",
   "version": "0.0.1",
-  "description": "use for iterator array to generator function",
+  "description": "use for iterator javascript array to generator function",
   "main": "index.js",
   "scripts": {
     "test": "mocha --harmony --recursive test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qimenxiaozi/generator-foreach.git"
+    "url": "git+https://github.com/qimenxiaozi/jeach.git"
   },
   "keywords": [
     "for",
@@ -18,9 +18,9 @@
   "author": "Hualu Qi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qimenxiaozi/generator-foreach/issues"
+    "url": "https://github.com/qimenxiaozi/jeach/issues"
   },
-  "homepage": "https://github.com/qimenxiaozi/generator-foreach#readme",
+  "homepage": "https://github.com/qimenxiaozi/jeach#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "co": "^4.6.0",
