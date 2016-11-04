@@ -1,0 +1,29 @@
+{
+  "name": "generator-foreach",
+  "version": "0.0.1",
+  "description": "use for iterator array to generator function",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qimenxiaozi/generator-foreach.git"
+  },
+  "keywords": [
+    "for",
+    "generator",
+    "array"
+  ],
+  "author": "Hualu Qi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qimenxiaozi/generator-foreach/issues"
+  },
+  "homepage": "https://github.com/qimenxiaozi/generator-foreach#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "co": "^4.6.0",
+    "thunkify-wrap": "^1.0.4"
+  }
+}
