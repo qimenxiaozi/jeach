@@ -21,7 +21,7 @@
     "url": "https://github.com/qimenxiaozi/generator-foreach/issues"
   },
   "homepage": "https://github.com/qimenxiaozi/generator-foreach#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^3.5.0",
     "co": "^4.6.0",
     "thunkify-wrap": "^1.0.4"
