@@ -5,7 +5,7 @@
 ## simple example
 
 ```js
-	yield *forEach([1, 2, 3], function*(value) {
+	yield forEach([1, 2, 3], function*(value) {
         let first = yield new Promise(function(resolve, reject) {
           resolve(value); 
         });

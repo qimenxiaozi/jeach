@@ -8,18 +8,25 @@ const co = require('co');
 describe('test', function() {
   describe('index.test.js', function() { 
     it('should work by sequence', function(done) {
-      let items = []; 
-      co(helper.forEach([1, 2, 3], function*(value) {
-        let pass = yield new Promise(function(resolve, reject) {
-          resolve(value); 
-        });
-
-        items.push(pass);
-
-      })).then(() => {
-        expect(items).to.eql([1,2,3]);
-        done();
-      }).catch( (err) => {throw err;});
+      function genPromise(timeout) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => resolve(timeout), timeout);
+        })
+      }
+      let result = [];
+      let init = [40, 5, 20];
+      co(helper.forEach(init, function*(value) {
+        result.push(value);
+        yield genPromise(value);
+        result.push(value + 1);
+      })).then( ss => {
+        expect(result.length).to.be.equal(init.length * 2);
+        for (let i = 0; i < init.length; ++i) {
+          expect(result[2 * i]).to.be.equal(init[i]);
+          expect(result[2 * i + 1]).to.be.equal(init[i] + 1);
+        }
+        done()
+      }).catch(err => {throw err});
     })
 
     it('should work mult-yield expressions', function(done) {

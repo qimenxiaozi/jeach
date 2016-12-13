@@ -1,6 +1,6 @@
 {
   "name": "jeach",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "use for iterator javascript array to generator function",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,8 @@
     "chai": "^3.5.0",
     "co": "^4.6.0",
     "thunkify-wrap": "^1.0.4"
+  },
+  "dependencies": {
+    "co": "^4.6.0"
   }
 }
